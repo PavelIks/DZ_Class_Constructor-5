@@ -1,14 +1,23 @@
 #pragma once
+#include <string>
 class C_User
 {
 public:
 	C_User();
 	/*C_User(char _name);*/
-	C_User(char* _name, char* _surname, short _age);
+	C_User(char* name, char* surname, short age);
+	const char* show_info();
 
-	void show_info();
+
+
+	std::string Convert_to_String()
+	{
+		std::string s = std::to_string(age);
+		return s + "\n" + name + "\n" + surname + "\n";
+	}
+
 private:
-	char* _name;
-	char* _surname;
-	short _age;
+	char* name;
+	char* surname;
+	short age;
 };
