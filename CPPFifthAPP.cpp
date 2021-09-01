@@ -5,10 +5,8 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 
-	int size = 4;
-
+	int size = 2;
 	C_User* arr = new C_User[size];
-
 
 	for (int i = 0; i < size; i++)
 	{
