@@ -19,3 +19,9 @@ C_User::C_User(char* name, char* surname, short age)
 	this->surname = surname;
 	this->age = age;
 }
+
+C_User::~C_User()
+{
+	delete[] name;
+	delete[] surname;
+}
